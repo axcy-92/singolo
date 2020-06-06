@@ -1,0 +1,14 @@
+@import url('singolo_fonts.css');
+
+body {
+    background-color: #f2f2f2;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+}
