@@ -1,6 +1,6 @@
 @import url('singolo_fonts.css');
 
-body {
+.page {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -13,7 +13,7 @@ body {
     background-color: #f2f2f2;
 }
 
-.header {
+.page__header {
     display: flex;
     flex-grow: 0;
     min-height: 89px;
@@ -23,38 +23,35 @@ body {
     padding: 0 40px;
 }
 
-.header a {
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: left;
-}
-
-.header a.logo {
+.header__logo {
     font-size: 25px;
     line-height: 6px;
     font-weight: 700;
+    text-align: left;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-.header a.logo::after {
+.header__logo::after {
     content: '*';
     color: #f06c64;
 }
 
-.header .site-nav {
+.header__nav {
     margin-left: auto;
     display: flex;
     align-items: center;
 }
 
-.header .site-nav ul {
+.header__menu {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
 
-.header .site-nav ul li {
+.menu__item {
     font-size: 12px;
     line-height: 6px;
     font-weight: 700;
@@ -62,32 +59,92 @@ body {
     display: inline-block;
 }
 
-.header .site-nav ul li:after {
+.menu__item:after {
     content: " \00b7";
     padding: 0 15px;
     color: #494e62;
 }
 
-.header .site-nav ul li:last-child:after {
+.menu__item:last-child:after {
     content: none;
 }
 
-.header .site-nav ul li.active a, .header .site-nav ul li a:hover {
+.menu__link {
+    text-align: left;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu__item_active .menu__link, .menu__item_active .menu__link:hover {
     color: #f06c64;
 }
 
-.content {
+.page__content {
     flex-grow: 1;
     overflow: auto;
 }
 
-.content .container {
+.content__head {
+    margin-bottom: 66px;
+}
+
+.content__body {
     padding: 0 40px;
 }
 
 .slider {
-    min-height: 600px;
-    margin-bottom: 66px;
+    position: relative;
+    overflow: hidden;
+    min-height: 594px;
     background-color: #f06c64;
+    border-bottom: #ea676b solid 6px;
 }
 
+.slider__items {
+    display: flex;
+    padding: 55px 75px;
+}
+
+.slider__item {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.slider__control {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    top: 50%;
+    margin: -11px;
+}
+
+.slider__control:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-bottom: 6px solid #ca4549;
+    border-left: 6px solid #ca4549;
+}
+
+.slider__control:hover:before {
+    border-color: #f2f2f2;
+}
+
+.slider__control_prev {
+    left: 57px;
+    transform: rotate(45deg);
+}
+
+.slider__control_next {
+    right: 57px;
+    transform: rotate(-135deg);
+}
+
+.page__footer {
+    border-bottom: #ffffff solid 6px;
+}

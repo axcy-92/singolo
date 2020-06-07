@@ -5,32 +5,45 @@
         <link rel="stylesheet" href="singolo1.css" type="text/css" charset="utf-8" />
         <title>Singolo</title>
     </head>
-    <body>
-        <header class="header">
-            <a class="logo" href="#">Singolo</a>
-            <nav class="site-nav">
-                <ul>
-                    <li class="active">
-                        <a href="#">Home</a>
+    <body class="page">
+        <header class="header page__header">
+            <a class="header__logo" href="#">Singolo</a>
+            <nav class="header__nav">
+                <ul class="menu header__menu">
+                    <li class="menu__item menu__item_active">
+                        <a class="menu__link" href="#">Home</a>
                     </li>
-                    <li>
-                        <a href="#">Services</a>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Services</a>
                     </li>
-                    <li>
-                        <a href="#">Portfolio</a>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Portfolio</a>
                     </li>
-                    <li>
-                        <a href="#">About</a>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">About</a>
                     </li>
-                    <li>
-                        <a href="#">Contact</a>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Contact</a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <div class="content">
-            <div class="slider"></div>
-            <div class="container">
+        <div class="content page__content">
+            <div class="content__head">
+                <div class="slider">
+                    <div class="slider__items">
+                        <div class="slider__item">
+                            <img src="assets/slider/iPhone Vertical.png"/>
+                        </div>
+                        <div class="slider__item">
+                            <img src="assets/slider/iPhone Horizontal.png"/>
+                        </div>
+                    </div>
+                    <div class="slider__control slider__control_prev" href="#"></div>
+                    <div class="slider__control slider__control_next" href="#"></div>
+                </div>
+            </div>
+            <div class="content__body">
                 <div class="text-paragraph">
                     <div class="title">Our Services</div>
                     <div class="text">
@@ -40,5 +53,5 @@
             </div>
         </div>
     </body>
-    <footer></footer>
+    <footer class="footer page__footer"></footer>
 </html>
