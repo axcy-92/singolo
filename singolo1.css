@@ -186,7 +186,6 @@
 .list-item__icon {
     width: 59px;
     height: 59px;
-    margin-right: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -201,7 +200,7 @@
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .list-item__title {
