@@ -193,7 +193,7 @@
 }
 
 .list-item__icon_circle {
-    border-radius: 29px;
+    border-radius: 100%;
     border: 2px solid #666d89;
 }
 
